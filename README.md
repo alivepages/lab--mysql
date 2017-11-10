@@ -45,7 +45,7 @@ After completing this assignment you should be able to:
   + Users *(structure)*:
     + `User_Id`, make it *auto increment* and *primary key*.
     + `Username`, length of 50.
-    + `Password`, length of 41, user `CHAR` MySQL Data Type, and make sure to encrypt the content using `PASSWORD` native function.
+    + `Password`, length of 41, user `CHAR` MySQL Data Type.
   + Messages
     + `Message_Id`, should be *auto_increment* and *primary_key*.
     + `User_Id`, the foreign key from `Users` table.
@@ -59,10 +59,10 @@ After completing this assignment you should be able to:
 + Insert two users:
   + User 1:
     + Username: `tapeface`
-    + Password: `tapeface`
+    + Password: `tapeface`. Make sure to encrypt the content using `PASSWORD` native function.
   + User 2:
     + Username: `butterface`
-    + Password: `butterface`
+    + Password: `butterface`. Make sure to encrypt the content using `PASSWORD` native function.
 + Save the next three messages:
   + Message 1
     + Username: `typeface`
